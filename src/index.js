@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express')();
 const cors = require('cors');
 const routes = require('./routes');
 const http = require('http');
@@ -10,7 +10,9 @@ const server = http.Server(app);
 app.use(express.json());
 app.use(routes);
 
-server.listen(21077);
+
+
+server.listen(80);
 
 
 //npm install express
