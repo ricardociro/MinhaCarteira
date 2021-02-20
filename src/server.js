@@ -10,9 +10,6 @@ const server = http.Server(app);
 app.use(express.json());
 app.use(routes);
 
-
-const PORT = process.env.PORT || 21077;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT);
-//server.listen(21077, function () {
- // console.log('Servidor rodando em: 21077');
-//});
+
