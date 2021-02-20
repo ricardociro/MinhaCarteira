@@ -1,5 +1,13 @@
-require("http")
-  .createServer((req, res) => res.end("Oi :D"))
-  .listen(process.env.PORT || 3000, () =>
-    console.log("AplicaÃ§Ã£o temporÃ¡ria rodando.")
-  );
+const express = require('express');
+const cors = require('cors');
+const routes = require('./routes');
+//const http = require('http');
+
+const app = express();
+app.use(cors({ origin: '*' }));
+app.use(express.json());
+app.use(routes);
+
+//const server = http.Server(app);
+
+app.listen(process.env.PORT || 3000);
