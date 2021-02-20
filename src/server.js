@@ -11,5 +11,8 @@ app.use(express.json());
 app.use(routes);
 
 const PORT = process.env.PORT || 3000;
+
+console.log('port' + PORT);
+console.log('process port' + process.env.PORT);
 server.listen(PORT);
 
