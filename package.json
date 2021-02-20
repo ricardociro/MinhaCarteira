@@ -4,7 +4,7 @@
   "description": "API Minha Carteira",
   "main": "server.js",
   "scripts": {
-    "start": "node temporario.js"
+    "start": "node src/temporario.js"
   },
   "repository": {
     "type": "git",
