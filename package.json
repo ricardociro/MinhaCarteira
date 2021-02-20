@@ -1,10 +1,10 @@
 {
   "name": "back",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API Minha Carteira",
-  "main": "server.js",
+  "main": "temporario.js",
   "scripts": {
-    "start": "node src/temporario.js"
+    "start": "node temporario.js"
   },
   "repository": {
     "type": "git",
